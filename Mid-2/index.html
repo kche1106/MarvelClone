@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 페이지 제목 -->
     <title>마블컬렉션</title>
+    <!-- 브라우저 기본 스타일 초기화 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- material-icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- main.css -->
     <link rel="stylesheet" href="./css/main.css">
+    <!-- main.js -->
     <script src="./js/main.js"></script>
+    <!-- 파비콘 설정 -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
         <div class="toolbar">
             <div class="sta-link">
@@ -86,6 +93,7 @@
             </div>
         </div>
         <div class="top-area">
+            <!-- 광고 배너 -->
             <div class="bnr">
                 <ul class="slide">
                     <li class="item first">
@@ -106,33 +114,29 @@
                 </ul>
 
             </div>
-
+            <!-- 마블 로고 -->
             <div class="logo">
                 <a href="https://marvelcollection.co.kr/index.html">
                     <img src="https://marvelcollection.co.kr/web/upload/category/logo/430747e091aff83a9cd80724504f27b0_E2QMHdX7sT_34_top.jpg">
                 </a>  
             </div>
-
+            <!-- 검색창 -->
             <div class="search">
                 <input type="text" name="keyword" size="10" value="">
-                <input class="search_submit" type="submit" alt="검색">
-
-
-
-                    
-
+                <input type="submit" class="search_submit"  alt="검색" value="  ">
             </div>
         </div>
     </header>
 
-    <section>
+    <main>
         <div class="category-bar">
+            <!-- 상품 카테고리 -->
             <div class="hamburger">
                 <span class="material-icons">
                     menu
                 </span>
             </div>
-
+            <!-- 서브 카테고리 -->
             <ul class="category-name">
             <li><a href="https://marvelcollection.co.kr/StorePick/Pick.html">스토어픽</a></li>
             <li><a href="https://marvelcollection.co.kr/product/project.html?cate_no=236">월간포스터</a></li>
@@ -142,20 +146,20 @@
             <li><a href="https://marvelcollection.co.kr/board/free/list.html?board_no=2">마블뉴스</a></li>
             <li><a href="https://marvelcollection.co.kr/marvel/about.html">매장소개</a></li>
             </ul>
-             
+             <!-- 장바구니 -->
             <div class="basket">
                 <div class="material-icons">
                     shopping_cart
                 </div>
             </div>
-
         </div>
+        
+        <!-- 팔콘 앤 윈터솔져 공식 예고편 -->
         <div class="adv">
-                <!-- <video src=""></video> -->
             <iframe src="https://www.youtube.com/embed/IWBsDaFWyTE?rel=0&controls=0&enablejsapi=1"></iframe>
         </div>
 
-    </section>
+    </main>
 
 </body>
 </html>
