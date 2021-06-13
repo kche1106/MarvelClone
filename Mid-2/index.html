@@ -13,7 +13,7 @@
     <!-- main.css -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- main.js -->
-    <script src="./js/main.js"></script>
+    <script  src="./js/main.js"></script>
     <!-- 파비콘 설정 -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
@@ -95,24 +95,42 @@
         <div class="top-area">
             <!-- 광고 배너 -->
             <div class="bnr">
-                <ul class="slide">
-                    <li class="item first">
-                        <a href="https://marvelcollection.co.kr/product/detail.html?product_no=643">
-                            <img src="https://marvelcollection.co.kr/web/upload/category/editor/2020/10/23/2315f0222ce42c93fc9d3d41953172bd.jpg" alt="슬라이드1">
-                        </a>
-                    </li>
-                    <li class="item second">
-                        <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%ED%94%BC%EA%B7%9C%EC%96%B4-%EB%A9%80%ED%8B%B0%ED%8E%9C%EB%B3%BC%ED%8E%9C%EC%83%A4%ED%94%84/345/category/64/display/1/">
-                            <img src="https://marvelcollection.co.kr/web/upload/category/editor/2020/09/14/990414c8360ef299f1b801ef59f422fe.jpg" alt="슬라이드2">
-                        </a>
-                    </li>
-                    <li class="item third">
-                        <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%EC%97%98%ED%99%80%EB%8D%94-%ED%8C%8C%EC%9D%BC-%EC%97%90%EB%B8%8C%EB%A6%AC%EB%8D%B0%EC%9D%B4-%ED%9E%88%EC%96%B4%EB%A1%9C/464/category/123/display/1/">
-                            <img src="https://marvelcollection.co.kr/web/upload/category/editor/2020/09/14/7c94ce7a8168aea81a53e566335c16bc.jpg" alt="슬라이드3">
-                        </a>
-                    </li>
-                </ul>
-
+                <div id="slider">
+                    <!-- 왼쪽 화살표 -->
+                    <div class="material-icons arrow--left">
+                        arrow_back_ios
+                    </div>
+                    <!-- 오른쪽 화살표 -->
+                    <div class="material-icons arrow--right">
+                        arrow_forward_ios
+                    </div>
+                    <!-- 슬라이드 이미지 -->
+                    <div class="slide slide1">
+                        <div class="slide_img">
+                            <a href="https://marvelcollection.co.kr/product/detail.html?product_no=643"></a>    
+                                <img src="https://marvelcollection.co.kr/web/upload/category/editor/2020/10/23/2315f0222ce42c93fc9d3d41953172bd.jpg" alt="슬라이드1">
+                        </div>
+                    </div>
+                    <div class="slide slide2">
+                        <div class="slide_img">
+                            <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%ED%94%BC%EA%B7%9C%EC%96%B4-%EB%A9%80%ED%8B%B0%ED%8E%9C%EB%B3%BC%ED%8E%9C%EC%83%A4%ED%94%84/345/category/64/display/1/"></a>
+                                <img src="https://marvelcollection.co.kr/web/upload/category/editor/2020/09/14/990414c8360ef299f1b801ef59f422fe.jpg" alt="슬라이드2">
+                        </div>
+                            
+                    </div>
+                    <div class="slide slide3">
+                        <div class="slide_img">
+                            <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%EC%97%98%ED%99%80%EB%8D%94-%ED%8C%8C%EC%9D%BC-%EC%97%90%EB%B8%8C%EB%A6%AC%EB%8D%B0%EC%9D%B4-%ED%9E%88%EC%96%B4%EB%A1%9C/464/category/123/display/1/"></a>
+                                <img src="https://marvelcollection.co.kr/web/upload/category/editor/2020/09/14/7c94ce7a8168aea81a53e566335c16bc.jpg" alt="슬라이드3">
+                        </div>
+                    </div>
+                    <!-- 슬라이드 위치 표시 -->
+                    <div class="dots">
+                        <div class="dot dot1"></div>
+                        <div class="dot dot2"></div>
+                        <div class="dot dot3"></div>
+                    </div>
+                </div>
             </div>
             <!-- 마블 로고 -->
             <div class="logo">
@@ -130,6 +148,7 @@
 
     <!-- MAIN -->
     <main>
+        <!-- 카테고리 바 -->
         <div class="category-bar">
             <!-- 상품 카테고리 -->
             <div class="hamburger">
@@ -159,7 +178,691 @@
         <div class="adv">
             <iframe src="https://www.youtube.com/embed/IWBsDaFWyTE?rel=0&controls=0&enablejsapi=1"></iframe>
         </div>
+
+        
+        <!-- 상품 -->
+        <div class="item_box">
+            <div class="items">
+                <div class="best">
+                        <div class="best_items">
+                            <p1>BEST ITEMS</p1>
+                            <br>
+                            <p2>클릭 수 증가하는 소리! 베스트 아이템</p2>
+                        </div>
+                        <div class="items1">
+                            <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%ED%94%BC%EA%B7%9C%EC%96%B4-%EC%97%90%EC%96%B4%ED%8C%9F-%EC%BC%80%EC%9D%B4%EC%8A%A4/252/category/1/display/19/">
+                                <img src="https://marvelcollection.co.kr/web/product/big/20191223/fa108a7918ebb5949a223c217358d002.jpg">
+                            </a>
+                        </div>
+                        <div class="items2">
+                            <a href="https://marvelcollection.co.kr/product/cosb575-%EC%97%94%EB%93%9C%EA%B2%8C%EC%9E%84-%EB%8B%A5%ED%84%B0%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%9D%B8%EC%A7%80%EC%9C%99%EC%97%90%EC%9D%B4%EC%85%98%ED%8A%B8-%EC%9B%90-set/147/category/1/display/19/">
+                                <img src="https://marvelcollection.co.kr/web/product/big/201910/03ac1aa6dad0cfe2ebc0a474fba9f403.jpg">
+                            </a>
+
+                        </div>
+                        <div class="items3">
+                            <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%EC%97%90%EC%96%B4%ED%8C%9F-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EC%B2%A0%EA%B0%80%EB%A3%A8-%EB%B0%A9%EC%A7%80-%EC%8A%A4%ED%8B%B0%EC%BB%A4-%ED%8F%AC%ED%95%A8/527/category/1/display/19/">
+                                <img src="https://marvelcollection.co.kr/web/product/big/20200309/f17a22a63eee0110af57db9900ab1307.jpg">
+                            </a>
+                        </div>
+                        <div class="items4">
+                            <a href="https://marvelcollection.co.kr/product/%EC%95%84%EB%8F%99-%EB%A7%88%EB%B8%94%EB%9E%98%EC%89%AC%EA%B0%80%EB%93%9C/614/category/1/display/19/">
+                                <img src="https://marvelcollection.co.kr/web/product/big/20200603/d2697ee74d4dbba4226cebc3846ad8c7.jpg">
+                            </a>
+                        </div>
+                        <div class="items5">
+                            <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%EC%97%98%ED%99%80%EB%8D%94-%ED%8C%8C%EC%9D%BC-%ED%83%9C%EC%8A%A4%ED%81%AC%EB%A7%88%EC%8A%A4%ED%84%B0/465/category/1/display/19/">
+                                <img src="https://marvelcollection.co.kr/web/product/big/20200204/accb8366c444fe912c6b7b8cbb065b4c.jpg">
+                            </a>
+                            
+                        </div>
+
+                    <div class="hot">
+                        <div class="hot_event">
+                            <p1>HOT TIME EVENT</p1>
+                            <br>
+                            <p2>놓치면 후회할 이벤트</p2>
+                        </div>
+                        <div class="hot_slide">
+                            <div id="hotslider">
+                                <div class="hotslide hotslide1">
+                                    <div class="hotslide_img">
+                                        <a href="https://marvelcollection.co.kr/article/%EC%8A%A4%ED%86%A0%EC%96%B4-%EC%9D%B4%EB%B2%A4%ED%8A%B8/8/609/">
+                                            <img src="https://marvelcollection.co.kr/web/upload/category/editor/2021/05/06/2382242ff4eff343cffd6aa5235dcf49.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hotslide hotslide2">
+                                    <div class="hotslide_img">
+                                        <a href="https://marvelcollection.co.kr/StorePick/Pick.html">
+                                            <img src="https://marvelcollection.co.kr/web/upload/category/editor/2021/03/19/08e70bf836f883fba413e4a6265c7ff7.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hotslide hotslide3">
+                                    <div class="hotslide_img">
+                                        <a href="https://marvelcollection.co.kr/myshop/coupon/coupon.html">
+                                            <img src="https://marvelcollection.co.kr/web/upload/category/editor/2021/03/19/53528822ae0671efdef319de38d320ec.jpg">
+                                        </a>
+                                    </div>                      
+                                </div>
+                                <div class="hotdots">
+                                    <div class="hotdot hotdot1"></div>
+                                    <div class="hotdot hotdot2"></div>
+                                    <div class="hotdot hotdot3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                        
+                </div>
+            
+                <div class="md_choice">
+                        <div class ="mdchoice_bar">
+                            <p1>MD'S CHOICE</p1>
+                            <br>
+                            <p2>MD가 선택한 특별한 아이템</p2>
+                        </div>
+                        <div class="mdchoice_items">
+                            <div class="mdchoice_items1">
+                                <div class="mdchoice_img">
+                                <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%EC%BA%90%EB%A6%AD%ED%84%B0-%ED%94%BC%EA%B7%9C%EC%96%B4-%EC%B9%AB%EC%86%94-%EC%9E%90%EC%84%9D%EA%B1%B0%EC%B9%98%EB%8C%80/187/category/1/display/14/">
+                                    <img src="https://marvelcollection.co.kr/web/product/medium/201911/fa089d87953ddb706bc123723b5cd418.jpg">
+                                </a> 
+                                </div> 
+                                <div class="mdchoice_info">
+                                    <div class="info1">
+                                        <h1>마블 캐릭터 피규어 칫솔 자석거치대</h1>
+                                        <h2>7,900원</h2>
+                                        <h3>자석으로 벽에 붙여서 깔끔하게 사용해요   </h3>       
+                                        <img src="https://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_product_pickup.gif">                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdchoice_items2">
+                                <div class="mdchoice_img">
+                                <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%EC%8A%A4%ED%85%8C%EC%9D%B8%EB%A6%AC%EC%8A%A4-%EB%A8%B8%EA%B7%B8-%ED%85%80%EB%B8%94%EB%9F%AC%EB%AC%BC%EC%BB%B5-320ml/173/category/1/display/14/">
+                                    <img src="https://marvelcollection.co.kr/web/product/medium/201910/e2561c37762a01f9ace8f4940caa6167.jpg">
+                                </a> 
+                                </div>  
+                                <div class="mdchoice_info">
+                                    <div class="info2">
+                                        <h1>마블 스테인리스 머그 텀블러/물컵 320ML</h1>
+                                        <h2>22000원</h2>
+                                        <h3>이중 진공단열 구조로 손까지 전달되는 온도차단</h3>
+                                        <img src="https://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_product_pickup.gif">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdchoice_items3">
+                                <div class="mdchoice_img">
+                                    <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%EB%AC%B8%EA%B5%AC-%EC%84%B8%ED%8A%B8-7%EC%A2%85-set/829/category/1/display/14/">
+                                    <img src="https://marvelcollection.co.kr/web/product/medium/202101/ae907d15c561d9c6aba5213957917e27.jpg">
+                                    </a> 
+                                </div>
+                                <div class="mdchoice_info">
+                                    <div class="info3">
+                                        <h1>마블 문구 세트 7종 SET</h1>
+                                        <h2>15,000원</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdchoice_items4">
+                                <div class="mdchoice_img">
+                                    <a href="https://marvelcollection.co.kr/product/30%EC%A3%BC%EB%85%84-%ED%95%9C%EC%A0%95-%EB%8D%B0%EB%93%9C%ED%92%80-%ED%8F%AC%EC%8A%A4%ED%84%B0%EB%B6%81/855/category/1/display/14/">
+                                    <img src="https://marvelcollection.co.kr/web/product/medium/202103/e0930bf516a779e6103b0c5cefebe5a0.webp">
+                                    </a>
+                                </div>
+                                <div class="mdchoice_info">
+                                    <div class="info4">
+                                        <h1>30주년 한정 데드풀 포스터북</h1>
+                                        <h2>25,000원</h2>    
+                                        <h3>데드풀 포스터 10장이 수록된 500부 한정 포스터북</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdchoice_items5">
+                                <div class="mdchoice_img">
+                                    <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%EC%96%B4%EB%B2%A4%EC%A0%B8%EC%8A%A4-%EC%B4%88%EA%B2%BD%EB%9F%89-%EB%8B%A4%EB%AA%A9%EC%A0%81-%EC%95%88%EC%A0%84%EC%9E%A5%EA%B0%91-%EC%95%84%EB%8F%99%EC%9A%A9/857/category/1/display/14/">
+                                    <img src="https://marvelcollection.co.kr/web/product/medium/202104/c981e3fe110dc7c4cad2275fa41518ee.jpg">
+                                    </a> 
+                                </div>
+                                <div class="mdchoice_info">
+                                    <div class="info5">
+                                        <h1>마블 어벤져스 초경량 다목적 안전장갑 아동용</h1>
+                                        <h2>3,900원</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdchoice_items6">
+                                <div class="mdchoice_img">
+                                    <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%EB%82%98%EB%85%B8-%EA%B1%B4%ED%8B%80%EB%A0%9B-%ED%82%A4%EB%A7%81-%EC%97%B4%EC%87%A0%EA%B3%A0%EB%A6%AC-pkey117n/242/category/1/display/14/">
+                                    <img src="https://marvelcollection.co.kr/web/product/medium/20191213/a8f97501265e29338e7cf67517caa423.jpg">
+                                    </a> 
+                                </div>
+                                <div class="mdchoice_info">
+                                    <div class="info6">
+                                        <h1></h1>마블 나노 건틀렛 키링 열쇠고리 PKEY117N
+                                        <h2>39,800원</h2>
+                                        <h3>어벤져스 명장면 모르는 사람은 사면 안됨..</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdchoice_items7">
+                                <div class="mdchoice_img">
+                                    <a href="https://marvelcollection.co.kr/product/%EB%B8%94%EB%9E%99%EC%9C%84%EB%8F%84%EC%9A%B0-%EC%97%90%EB%94%94%EC%85%98-%EC%95%BC%EA%B5%AC-%EB%AA%A8%EC%9E%90/555/category/1/display/14/">
+                                    <img src="https://marvelcollection.co.kr/web/product/medium/20200331/02f1e333645fe697dedaffbe1d007cec.jpg">
+                                    </a> 
+                                </div>
+                                <div class="mdchoice_info">
+                                    <div class="info7">
+                                        <h1>블랙위도우 에디션 야구 모자</h1>
+                                        <h2>20,000원</h2>
+                                        <img src="https://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_product_pickup.gif">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdchoice_items8">
+                                <div class="mdchoice_img">
+                                    <a href="https://marvelcollection.co.kr/product/11-%EB%B4%84%EB%A7%9E%EC%9D%B4-%EC%83%81%EC%9D%98-%EC%9D%B4%EB%B2%A4%ED%8A%B8/848/category/1/display/14/">
+                                    <img src="https://marvelcollection.co.kr/web/product/medium/202103/714a26cce4908fc3c906b9b0b4ea14c3.jpg">
+                                    </a> 
+                                </div>
+                                <div class="mdchoice_info">
+                                    <div class="info8">
+                                        <h1>1+1 봄맞이 상의 이벤트</h1>
+                                        <h2>49,000원</h2>
+                                        <img src="https://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_product_pickup.gif">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdchoice_items9">
+                                <div class="mdchoice_img">
+                                    <a href="https://marvelcollection.co.kr/product/11-lg%EC%83%9D%ED%99%9C%EA%B1%B4%EA%B0%95-%EC%98%AC%EC%9D%B8%EC%9B%90-%ED%99%94%EC%9E%A5%ED%92%88-3%EC%A2%85/752/category/1/display/14/">
+                                    <img src="https://marvelcollection.co.kr/web/product/medium/202011/ecb384cd81f111688605af59a2a43dab.jpg">
+                                    </a> 
+                                </div>
+                                <div class="mdchoice_info">
+                                    <div class="info9">
+                                        <h1>1+1 LG생활건강 올인원 화장품 3종</h1>
+                                        <h2>10,000원</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdchoice_items10">
+                                <div class="mdchoice_img">
+                                    <a href="https://marvelcollection.co.kr/product/%EB%B8%94%EB%9E%99%EC%9C%84%EB%8F%84%EC%9A%B0-%EC%97%90%EB%94%94%EC%85%98-%ED%83%88%EB%B6%80%EC%B0%A9-%ED%88%AC%EB%AA%85-%EC%8A%A4%ED%8B%B0%EC%BB%A4/558/category/1/display/14/">
+                                    <img src="https://marvelcollection.co.kr/web/product/medium/20200407/cfd21cff5a1848a4d85db63c6958503f.jpg">
+                                    </a> 
+                                </div>
+                                <div class="mdchoice_info">
+                                    <div class="info10">
+                                        <h1>블랙위도우에디션 탈부착 투명 스티커</h1>
+                                        <h2>5,000원</h2>
+                                        <h3>리미티드 에디션 탈부착이 가능한 투명스티커</h3>
+                                        <img src="https://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_product_pickup.gif">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdchoice_items11">
+                                <div class="mdchoice_img">
+                                    <a href="https://marvelcollection.co.kr/product/%ED%95%AB%ED%86%A0%EC%9D%B4-%EB%B2%A0%EB%86%88-%EC%96%BC%EA%B5%B4-%EC%BF%A0%EC%85%98-pcus047n/215/category/1/display/14/">
+                                    <img src="https://marvelcollection.co.kr/web/product/medium/20191129/96a3896a386b0d8a11068a41a801106b.jpg">
+                                    </a> 
+                                </div>
+                                <div class="mdchoice_info">
+                                    <div class="info11">
+                                        <h1>핫토이 베놈 얼굴 쿠션 PCUS047N</h1>
+                                        <h2>30,000원</h2>
+                                        <h3>보들보들 극세사에 베놈 혀가 매력포인트</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="mdchoice_items12">
+                                <div class="mdchoice_img">
+                                    <a href="">
+                                    <img src=" ">
+                                    </a> 
+                                </div>
+                                <div class="mdchoice_info">
+                                    <div class="info12">
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+
+                        </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="new">
+            <div class="big_img">
+                <div class ="box-wrap">                        
+                    <img src="https://marvelcollection.co.kr/web/upload/category/editor/2021/03/10/21347880a506f94f3a5c5d0b6afd2e47.jpg">
+                </div>
+            </div>
+            <div class="new_box">
+                <div class="image1">
+                    <img src="https://marvelcollection.co.kr/web/product/medium/202012/5aa9ab739b2f68bae7a4f1b454722eb4.jpg">
+                </div>
+                <div class="image2">
+                    <img src="https://marvelcollection.co.kr/web/product/medium/20200108/f0eeb11fe081f9f41864240aeb5e1e40.jpg">
+                </div>
+                <div class="image3">
+                    <img src="https://marvelcollection.co.kr/web/product/medium/20200108/7613b9770fbf4c75f9978d883e9bf892.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class ="spider">
+            <div class="spider-bnr">
+                <div class="spider-wrap">
+                    <img src="https://marvelcollection.co.kr/web/upload/category/editor/2021/03/10/054f22f3a02dc3ce0b2674a01493b64e.jpg">
+                </div>
+            </div>
+            <div class="spider_box">
+                <div class="spider_image1">
+                    <img src="https://marvelcollection.co.kr/web/product/medium/202106/45e938f808f8ff21843e80b6377ffa3f.jpg">
+                </div>
+                <div class="spider_image2">
+                    <img src="https://marvelcollection.co.kr/web/product/medium/202106/f5f1a08f956c9f733d10d044c87140f9.jpg">
+                </div>
+                <div class="spider_image3">
+                    <img src="https://marvelcollection.co.kr/web/product/medium/202106/08a46c5c887a8eb66af334f81f413ebd.jpg">
+                </div>
+                <div class="spider_image4">
+                    <img src="https://marvelcollection.co.kr/web/product/medium/202106/97ea8d9b49065c5e68ef962a64e853a8.jpg">
+                </div>
+                <div class="spider_image5">
+                    <img src="https://marvelcollection.co.kr/web/product/medium/202103/9805a62f3fe38fa36d07bf326474b179.jpg">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="character_shop">
+            <div class="shop_intro">
+                <div class="shop_name">
+                    <p1>CHARACTER SHOP</p1>
+                    <br>
+                    <p2>각양각색! 캐릭터별 인기아이템</p2>
+                </div>
+            </div>
+            <div class="shop_banner">
+                <ul id = "brand_list">
+                    <li class="venom"><h1>베놈</h1></li>
+                    <li class="ironman"><h2>아이언맨</h2></li>
+                    <li class="blackwidow"><h2>블랙위도우</h2></li>
+                    <li class="spiderman"><h2>스파이더맨</h2></li>
+                </ul>
+            </div>
+            <div class="shop_img">
+                <div class="background_bnr">
+                    <div class="background_img">
+                        <img src="https://marvelcollection.co.kr/McsHom/img_mcs/bn_main_brand_VN.jpg">
+                    </div>
+                </div>
+                <div class="mini-shop">
+                    <div class="mini-shop-img1">
+                        <img src="https://marvelcollection.co.kr/web/product/medium/20191129/96a3896a386b0d8a11068a41a801106b.jpg">
+                    </div>
+                    <div class="mini-shop-img2">
+                        <img src="https://marvelcollection.co.kr/web/product/medium/20200305/9a4ed73e04ef130197cd1afca463b211.jpg"> 
+                    </div>
+                    <div class="mini-shop-img3">
+                        <img src="https://marvelcollection.co.kr/web/product/medium/20200113/10a693055e2584b59f6f31f9ee37570c.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="poster-collection">
+            <div class="collection_img">
+                <img src="https://marvelcollection.co.kr/web/upload/category/editor/2021/03/30/146e77f36f79b91b273c72ae696638e9.jpg">
+            </div>
+        </div>
+
+        <div class="special_theme">
+            <div class="special_intro">
+                <p1>SPECIAL THEME</p1>
+                <br>
+                <p2>집에서 마블 완독 어때요?</p2>
+            </div>
+            <div class="special_items">
+                <div class="special_itmes1">
+                    <div class="special_img">
+                    <a href="https://marvelcollection.co.kr/product/%EC%8B%9C%EB%B9%8C-%EC%9B%8C-%EC%95%84%EC%9D%B4%EC%96%B8-%EB%A7%A8/322/category/1/display/21/">
+                        <img src="https://marvelcollection.co.kr/web/product/medium/20200120/5079811a6bfdc1ac044ecb248fb6a697.jpg">
+                    </a>
+                    </div>
+                    <div class="special_info">
+                        <div class="special_info1">
+                            <h1>시빌 워 : 아이언 맨</h1>
+                            <h2>10,800원</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="special_itmes2">
+                    <div class="special_img">
+                    <a href="https://marvelcollection.co.kr/product/%EC%8B%9C%EB%B9%8C-%EC%9B%8C-%EC%96%B4%EB%A9%94%EC%9D%B4%EC%A7%95-%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8/321/category/1/display/21/">
+                        <img src="https://marvelcollection.co.kr/web/product/medium/20200113/636bc9d90a394162cd5c797b07f0f290.jpg">
+                    </a>
+                    </div>
+                    <div class="special_info">
+                        <div class="special_info2">
+                            <h1>시빌 워 : 어메이징 스파이더맨</h1>
+                            <h2>10,800원</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="special_itmes3">
+                    <div class="special_img">
+                    <a href="https://marvelcollection.co.kr/product/%EC%8B%9C%EB%B9%8C-%EC%9B%8C-%EC%9A%B8%EB%B2%84%EB%A6%B0/320/category/1/display/21/">
+                        <img src="https://marvelcollection.co.kr/web/product/medium/20200113/b55397805113303fd6d3d5749b485a19.jpg">
+                    </a>
+                    </div>
+                    <div class="special_info">
+                        <div class="special_info3">
+                            <h1>시빌 워: 울버린</h1>
+                            <h2>11,700원</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="special_itmes4">
+                    <div class="special_img">
+                    <a href="https://marvelcollection.co.kr/product/%EC%8B%9C%EB%B9%8C-%EC%9B%8C-%EC%BA%A1%ED%8B%B4-%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4/319/category/1/display/21/">
+                        <img src="https://marvelcollection.co.kr/web/product/medium/20200113/be19e8953a551bd4b041447ddb3f2e50.jpg">
+                    </a>
+                    </div>
+                    <div class="special_info">
+                        <div class="special_info4">
+                            <h1>시빌 워 : 캡틴 아메리카</h1>
+                            <h2>11,700원</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="special_itmes5">
+                    <div class="special_img">
+                    <a href="https://marvelcollection.co.kr/product/%EC%8B%9C%EB%B9%8C-%EC%9B%8C-%ED%94%84%EB%A1%A0%ED%8A%B8-%EB%9D%BC%EC%9D%B8-1/318/category/1/display/21/">
+                        <img src="https://marvelcollection.co.kr/web/product/medium/20200113/6bb04b2a2de0ce38db1cb09a306af7e4.jpg">
+                    </a>
+                    </div>
+                    <div class="special_info">
+                        <div class="special_info5">
+                            <h1>시빌 워: 프론트 라인 1</h1>
+                            <h2>14,400원</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="special_itmes6">
+                    <div class="special_img">
+                    <a href="https://marvelcollection.co.kr/product/%EC%8B%9C%EB%B9%8C-%EC%9B%8C-%ED%94%84%EB%A1%A0%ED%8A%B8-%EB%9D%BC%EC%9D%B8-2/317/category/1/display/21/">
+                        <img src="https://marvelcollection.co.kr/web/product/medium/20200113/3b8c37b08c791b392d258fb45eec09e9.jpg">
+                    </a>
+                    </div>
+                    <div class="special_info">
+                        <div class="special_info6">
+                            <h1>시빌 워: 프론트 라인 2</h1>
+                            <h2>10,800원
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="special_itmes7">
+                    <div class="special_img">
+                    <a href="https://marvelcollection.co.kr/web/product/medium/20200113/3b8c37b08c791b392d258fb45eec09e9.jpg">
+                        <img src="https://marvelcollection.co.kr/web/product/medium/20200113/158d93621b1a8cd11119400b384cb0b2.jpg">
+                    </a>
+                    </div>
+                    <div class="special_info">
+                        <div class="special_info7">
+                            <h1>시즈</h1>
+                            <h2>13,500원</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="special_itmes8">
+                    <div class="special_img">
+                    <a href="https://marvelcollection.co.kr/product/%EC%8B%9C%EC%A6%88-%EB%8B%A4%ED%81%AC-%EC%96%B4%EB%B2%A4%EC%A0%80%EC%8A%A4/315/category/1/display/21/">
+                        <img src="https://marvelcollection.co.kr/web/product/medium/20200113/a5cd246a33dc4f9c888d125412495c8d.jpg">
+                    </a>
+                    </div>
+                    <div class="special_info">
+                        <div class="special_info8">
+                            <h1>시즈: 다크 어벤저스</h1>
+                            <h2>9,900원</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review_event">
+                <div class = "review_event_img">
+                    <a href="https://marvelcollection.co.kr/article/%EC%8A%A4%ED%86%A0%EC%96%B4-%EC%9D%B4%EB%B2%A4%ED%8A%B8/8/219/"></a>
+                        <img src ="https://marvelcollection.co.kr/web/upload/category/editor/2020/09/10/182dedd3c91e7c8847ae9a7872938296.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="notice">
+                <div class="notice_name">
+                    <a href="https://marvelcollection.co.kr/board/free/list.html?board_no=1">
+                        <p1>공지사항</p1>
+                        <p2>NOTICE</p2>
+                    </a>                    
+                </div>
+                <div class= "notice_story">
+                    <div class ="notice_title">
+                        <a href="https://marvelcollection.co.kr/article/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/1/199/">
+                            <p>할인쿠폰 오류 관련 공지</p>
+                            <br>
+                        </a>
+                        <a href="https://marvelcollection.co.kr/article/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/1/81/">
+                            <p>2020년 설 연휴 물량 증가로 인한 배송 ...</p>
+                            <br>
+                        </a>
+                        <a href="https://marvelcollection.co.kr/article/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/1/24/">
+                            <p>SNS로그인 연동 공지입니다.</p>
+                            <br>
+                        </a>
+                        <a href="https://marvelcollection.co.kr/article/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/1/18/">
+                            <p>결제 관련 공지입니다.</p>
+                        </a>
+                        
+                    </div>
+                    <div class= "notice_date">
+                        <h1>2020/08/21</h1>
+                        <br>
+                        <h2>2020/01/16</h2>
+                        <br>
+                        <h3>2019/10/28</h3>
+                        <br>
+                        <h4>2019/08/07</h4>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="news">
+                <div class="news_name">
+                    <a href="https://marvelcollection.co.kr/board/product/list.html?board_no=2">
+                        <p1>마블 뉴스</p1>
+                        <p2>NEWS</p2>
+                    </a>
+                    
+                </div>
+                <div class="news_story">
+                    <div class="news_title">
+                        <a href="https://marvelcollection.co.kr/article/%EB%A7%88%EB%B8%94-%EB%89%B4%EC%8A%A4/2/522/">
+                            <p>[마컬리 뉴스] 모비우스 연기 (3월 -> 1...</p>
+                            <br>
+                        </a>
+                        <a href="https://marvelcollection.co.kr/article/%EB%A7%88%EB%B8%94-%EB%89%B4%EC%8A%A4/2/521/">
+                            <p>[마컬리 뉴스] 에단호크가 문나이트 빌런으로...</p>
+                            <br>
+                        </a>
+                        <a href="https://marvelcollection.co.kr/article/%EB%A7%88%EB%B8%94-%EB%89%B4%EC%8A%A4/2/503/">
+                            <p>[마컬리 뉴스] 아듀 엔터식스 한양대점!</p>
+                            <br>
+                        </a>
+                        <a href="https://marvelcollection.co.kr/article/%EB%A7%88%EB%B8%94-%EB%89%B4%EC%8A%A4/2/502/">
+                            <p>[마컬리 뉴스] 완다비전 굿즈 만나게 해주...</p>
+                            <br>
+                        </a>
+                        <a href="https://marvelcollection.co.kr/article/%EB%A7%88%EB%B8%94-%EB%89%B4%EC%8A%A4/2/501/">
+                            <p>[마컬리 뉴스] 마블 시네마틱 유니버스 최초...</p>
+                        </a>
+                        
+                    </div>
+                    <div class="news_date">
+                        <p>2021/01/20</p>
+                        <br>
+                        <p>2021/01/20</p>
+                        <p>
+                        <p>2021/01/14</p>
+                        <br>
+                        <p>2021/01/13</p>
+                        <br>
+                        <p>2021/01/13</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 포토리뷰 -->
+        <div class="photo_review">
+            <div class="photo_review_intro">
+                <p1>PHOTO REVIEW</p1>
+                <br>
+                <p2>상품을 구매하신 분들이 남겨주신 소중한 리얼 포토 후기</p2>
+            </div>
+            <div class="photo_review_box">
+                <div class="review_itmes1">
+                    <div class="photo_review_img">
+                    <a href="https://marvelcollection.co.kr/product/11-lg%EC%83%9D%ED%99%9C%EA%B1%B4%EA%B0%95-%EC%98%AC%EC%9D%B8%EC%9B%90-%ED%99%94%EC%9E%A5%ED%92%88-3%EC%A2%85/752/">
+                        <img src="https://marvelcollection.co.kr/web/product/medium/202011/ecb384cd81f111688605af59a2a43dab.jpg">
+                    </a>
+                    </div>
+                    <div class="photo_review_info">
+                        <div class="photo_review_info1">
+                            <h1>편하고좋아요 에센스도좋았는데 안나올까요ㅠㅠ
+                                (2021-06-10 01:14:52에 등록된 네이버 페이 구매...
+                            </h1>
+                            <h2>2021-06-11 02:34:12</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_itmes2">
+                    <div class="photo_review_img">
+                    <a href="https://marvelcollection.co.kr/product/%EB%B8%94%EB%9E%99%EC%9C%84%EB%8F%84%EC%9A%B0-%EC%97%90%EB%94%94%EC%85%98-%EB%B0%B1%ED%94%84%EB%A6%B0%ED%8C%85-%EB%B0%98%ED%8C%94%ED%8B%B0/616/">
+                        <img src="https://marvelcollection.co.kr/file_data/sigongmcs/2021/05/22/800e6a7c3c1f53ba1f49f131622db4f9.jpeg">
+                    </a>
+                    </div>
+                    <div class="photo_review_info">
+                        <div class="photo_review_info2">
+                            <h1>진짜 디자인부터 옷질감까지 완벽해요!! 매일 입고다
+                                니고요 나중에 블랙위도우 개봉하면 입고가야겠어...</h1>
+                            <h2>2021-05-22 03:46:13</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_itmes3">
+                    <div class="photo_review_img">
+                    <a href="https://marvelcollection.co.kr/product/%EC%97%94%EB%93%9C%EA%B2%8C%EC%9E%84-%ED%83%80%EB%85%B8%EC%8A%A4-%ED%8F%AC%EC%8A%A4%ED%84%B0/585/">
+                        <img src="https://marvelcollection.co.kr/file_data/sigongmcs/2021/05/17/8cce567e4790889fc5770b5bccdbdac5.jpeg">
+                    </a>
+                    </div>
+                    <div class="photo_review_info">
+                        <div class="photo_review_info3">
+                            <h1>포스터 멋져요. 아이방에 붙였어요(2021-02-16
+                                13:15:40에 등록된 네이버 페이 구매평)
+                            </h1>
+                            <h2>2021-05-17 03:43:07</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_itmes4">
+                    <div class="photo_review_img">
+                    <a href="https://marvelcollection.co.kr/product/%ED%95%AB%ED%86%A0%EC%9D%B4-%EB%B2%A0%EB%86%88-%EC%96%BC%EA%B5%B4-%EC%BF%A0%EC%85%98-pcus047n/215/">
+                        <img src="https://marvelcollection.co.kr/web/product/medium/20191129/96a3896a386b0d8a11068a41a801106b.jpg">
+                    </a>
+                    </div>
+                    <div class="photo_review_info">
+                        <div class="photo_review_info4">
+                            <h1>조아요 애가조아해요 번창하세요(2021-05-15 
+                                09:37:50 에 등록된 네이버 페이 구매평)</h1>
+                            <h2>2021-05-16 03:18:07</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_itmes5">
+                    <div class="photo_review_img">
+                    <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%EC%BA%94%EB%B2%84%EC%8A%A4-%ED%84%B0%EC%B9%98-%EB%AC%B4%EB%93%9C%EB%93%B1/580/">
+                        <img src="https://marvelcollection.co.kr/file_data/sigongmcs/2021/05/14/382b2b1a5972f303340c1c989de61708.jpg">
+                    </a>
+                    </div>
+                    <div class="photo_review_info">
+                        <div class="photo_review_info5">
+                            <h1>배송도 안전하게 오고 물건 잘 받았어요~건전지 AA3
+                                개만 넣으니 밝기도 괜찮네요앞에 토치만 한번하면...</h1>
+                            <h2>2021-05-14 22:00:26</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_itmes6">
+                    <div class="photo_review_img">
+                    <a href="https://marvelcollection.co.kr/product/%EB%B8%94%EB%9E%99%EC%9C%84%EB%8F%84%EC%9A%B0-%EC%97%90%EB%94%94%EC%85%98-%EB%B4%84%EB%B2%84-%EC%9E%AC%ED%82%B7/556/">
+                        <img src="https://marvelcollection.co.kr/file_data/sigongmcs/2021/05/14/1952600f833a0ad6bdbe13cd793cd10c.jpg">
+                    </a>
+                    </div>
+                    <div class="photo_review_info">
+                        <div class="photo_review_info6">
+                            <h1>생각보다 더 따뜻하네요 ㄷㄷ개봉이 다가와서 샀는데 
+                                여름에 못입겠죠?ㅋㅋㅋ앞에 빨간 마크가 이쁜 것...</h1>
+                            <h2>2021-05-14 18:12:44</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_itmes7">
+                    <div class="photo_review_img">
+                    <a href="https://marvelcollection.co.kr/product/%EB%A7%88%EB%B8%94-%EC%B9%B4%EC%99%80%EC%9D%B4-%EB%AC%B4%EC%84%A0%ED%82%A4%EB%B3%B4%EB%93%9C/756/">
+                        <img src="https://marvelcollection.co.kr/file_data/sigongmcs/2021/05/14/1210071f194ef11e224860a8d066e7a8.jpg">
+                    </a>
+                    </div>
+                    <div class="photo_review_info">
+                        <div class="photo_review_info7">
+                            <h1>상품 페이지에서는  AA라고 써져있는데 실제론 건전
+                                지가 AAA 사이즈 같아요어쨌든 건전지가 함께와서...</h1>
+                            <h2>2021-05-14 18:03:50</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_itmes8">
+                    <div class="photo_review_img">
+                    <a href="https://marvelcollection.co.kr/product/%EB%B8%94%EB%9E%99%EC%9C%84%EB%8F%84%EC%9A%B0-%EC%97%90%EB%94%94%EC%85%98-%EB%B0%B1%ED%8C%A9/553/">
+                        <img src="https://marvelcollection.co.kr/file_data/sigongmcs/2021/05/07/93c3499393192fc7cf3289cd48346f2a.jpeg">
+                    </a>
+                    </div>
+                    <div class="photo_review_info">
+                        <div class="photo_review_info8">
+                            <h1>블랙위도우 로고 이뻐요(2021-05-06 21:11:49 에 등
+                                록된 네이버 페이 구매평)</h1>
+                            <h2>2021-05-07 05:44:50</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <div class = "more_box">
+                    <p>더보기+</p>
+                </div>
+            </div>
+        </div>
+
     </main>
+
 
     <!-- FOOTER -->
     <footer>
@@ -247,7 +950,7 @@
         <div class="footer-fin">
             <div class="text">
                 <p class="COPYRIGHT">COPYRIGHT © 2020 (주)시공사. ALL RIGHTS RESERVED. ©2020 MARVEL</p> 
-                <p class="notice"> 본 사업자는 LG U+의 결제대금 예치서비스에 가입된 업체로서,안전하게 거래를 하실 수 있습니다.</p>  
+                <p class="footer_notice"> 본 사업자는 LG U+의 결제대금 예치서비스에 가입된 업체로서,안전하게 거래를 하실 수 있습니다.</p>  
             </div>
         </div>
     </footer>
